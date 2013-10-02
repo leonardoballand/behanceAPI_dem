@@ -1,3 +1,46 @@
 <h1>Demo BEHANCE</h1>
 
-<%= @client.user_projects("digitalz") %>
+<div>
+	<ul>
+		<h1>Informações personais</h1>
+		<li>ID: <%= @id %></li>
+		<li>Nome completo: <%= @first_name %> <%= @last_name %></li>
+		<li>Cidade: <%= @city %></li>
+		<li>Pais: <%= @country %></li>
+		<li>Empresa: <%= @company %></li>
+		<li>Emprego: <%= @occupation %></li>
+		<li>URL: <%= link_to @url, @url %></li>
+		<li>Areas: <%= @fields %></li>
+		<li>Conta Twitter: <%= @twitter %></li>
+	</ul>
+	<ul>
+		<h1>Estetaticas</h1>
+		<li>Followers: <%= @followers %></li>
+		<li>Following: <%= @following %></li>
+		<li>Appreciations: <%= @appreciations %></li>
+		<li>Vistas: <%= @views %></li>
+		<li>Commentarios: <%= @comments %></li>
+	</ul>
+	<ul>
+		<h1>Logotipos</h1>
+		<li>Thumbnail 50x50: <%= image_tag @thumb50 %></li>
+		<li>Thumbnail 115x115: <%= image_tag @thumb115 %></li>
+		<li>Thumbnail 138x138: <%= image_tag @thumb138 %></li>
+	</ul>
+</div>
+
+<div>
+	<p><%= @projectinfo %></p>
+	<ul>
+		<li><%= @projid %></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
